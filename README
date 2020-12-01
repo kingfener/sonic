@@ -1,3 +1,24 @@
+
+
+＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃
+
+  git clone https://github.com/kingfener/sonic.git
+
+  sudo apt-get install libfftw3-dev
+
+  make -j 6
+
+  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/wt/Desktop/partner/sonic
+
+  chmod 777 sonic
+
+  cp sonic /usr/bin/sonic
+
+  sonic -p 2 ./samples/talking.wav ./samples/talking-s1-p2.wav
+
+＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃
+
+
 Sonic is a simple algorithm for speeding up or slowing down speech.  However,
 it's optimized for speed ups of over 2X, unlike previous algorithms for changing
 speech rate.  The Sonic library is a very simple ANSI C library that is designed
